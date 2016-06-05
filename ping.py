@@ -35,7 +35,7 @@ def ping_ip(filename):
   
 
 def print_table(reachable, non_reachable):
-  print '\n++++++++++++++++++++++++++++++'
+  print '\n+----------------------------+'
   print '|' + "{0:^17s} {1:^} {2:^7s} {1:^}".format('IP Address', '|', 'Status')
   print '|------------------+---------|'
 
@@ -47,7 +47,7 @@ def print_table(reachable, non_reachable):
   for nonpingable in non_reachable:
     print '|' + "{0:^17s} {1:^} {2:^7s} {1:^}".format(nonpingable, '|', 'Dead')
 
-  print '++++++++++++++++++++++++++++++\n'
+  print '+----------------------------+\n'
 
 
 def main():
